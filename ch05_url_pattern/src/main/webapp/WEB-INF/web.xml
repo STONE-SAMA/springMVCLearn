@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<!--声明注册springMVC的核心对象DispatcherServlet
+    需要在tomcat服务器启动后，创建DispatcherServlet对象的实例
+    DispatcherServlet在其创建过程中，会同时创建springMVC容器对象，读取springmvc的配置文件，
+        并将配置文件中的对象创建好，当用户发起请求时便可使用对象了
+
+   servlet的初始化会执行init()方法。DispatcherServlet在init()中{
+        //创建容器，读取配置文件
+        WebApplicationContext ctx = new ClassPathXmlApplicationContext("springmvc.xml");
+        //将容器对象放入到ServletContext中
+        getServiceContext().setAttribute(key,ctx);
+
+
+        springmvc创建容器对象时，读取的默认配置文件是/WEB-INF/<servlet-name>-servlet.xml
+   }
+
+-->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+<!--    自定义springmvc配置文件的位置-->
+        <init-param>
+            <!--自定义springmvc配置文件的位置属性-->
+            <param-name>contextConfigLocation</param-name>
+            <!--指定配置文件的位置-->
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+
+        <!--    zaitomcat启动后，创建serclet对象
+        load-on-startup表示tomcat启动后创建对象的顺序，值为整数，数值越小，tomcat创建对象的时间越早-->
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+
+     <servlet-mapping>
+         <servlet-name>springmvc</servlet-name>
+     <!--使用框架时，url-pattern可以使用两种值
+         1、拓展名方式，*.xxxx，xxxx是自定义的拓展名
+         常用方式*.do,*.action,*.mvc
+            http://localhost:8080/springmvc/***.do
+         2、使用斜杠"/"
+                当项目中使用/ 它会替代tomcat的default导致所有的静态资源都给DispatcherServlet处理
+                默认情况下DispatcherServlet没有处理静态资源的能力，没有控制器对象能够处理静态资源的访问，
+                所以静态资源都是404
+                动态资源可以访问，因为程序中有controller对象，能够处理some.do请求
+
+         -->
+         <url-pattern>/</url-pattern>
+     </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch03_receive_param" />
+        <module name="ch04_return" />
+        <module name="ch11_interceptor_permession" />
+        <module name="ch07_ssm" />
+        <module name="ch05_url_pattern" />
+        <module name="ch10_interceptor" />
+        <module name="ch09_exception_handler" />
+        <module name="ch06_path" />
+        <module name="ch08_forward_redirect" />
+        <module name="ch02_requestmapping" />
+        <module name="ch01_first_springMVC" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch01_first_springMVC" target="1.8" />
+      <module name="ch02_requestmapping" target="1.8" />
+      <module name="ch03_receive_param" target="1.8" />
+      <module name="ch04_return" target="1.8" />
+      <module name="ch05_url_pattern" target="1.8" />
+      <module name="ch06_path" target="1.8" />
+      <module name="ch07_ssm" target="1.8" />
+      <module name="ch08_forward_redirect" target="1.8" />
+      <module name="ch09_exception_handler" target="1.8" />
+      <module name="ch10_interceptor" target="1.8" />
+      <module name="ch11_interceptor_permession" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding UTF-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ch01_first_springMVC" options="" />
+      <module name="ch02_requestmapping" options="" />
+      <module name="ch03_receive_param" options="" />
+      <module name="ch04_return" options="" />
+      <module name="ch05_url_pattern" options="" />
+      <module name="ch06_path" options="" />
+      <module name="ch07_ssm" options="" />
+      <module name="ch08_forward_redirect" options="" />
+      <module name="ch09_exception_handler" options="" />
+      <module name="ch10_interceptor" options="" />
+      <module name="ch11_interceptor_permession" options="" />
+    </option>
+  </component>
+</project>

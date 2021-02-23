@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ch01_first_springMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/ch02_requestmapping" />
+    <file type="web" url="file://$PROJECT_DIR$/ch03_receive_param" />
+    <file type="web" url="file://$PROJECT_DIR$/ch04_return" />
+    <file type="web" url="file://$PROJECT_DIR$/ch05_url_pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/ch06_path" />
+    <file type="web" url="file://$PROJECT_DIR$/ch07_ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/ch08_forward_redirect" />
+    <file type="web" url="file://$PROJECT_DIR$/ch09_exception_handler" />
+    <file type="web" url="file://$PROJECT_DIR$/ch10_interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/ch11_interceptor_permession" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ch01_first_springMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/ch02_requestmapping/pom.xml" />
+        <option value="$PROJECT_DIR$/ch03_receive_param/pom.xml" />
+        <option value="$PROJECT_DIR$/ch04_return/pom.xml" />
+        <option value="$PROJECT_DIR$/ch05_url_pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/ch06_path/pom.xml" />
+        <option value="$PROJECT_DIR$/ch07_ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/ch08_forward_redirect/pom.xml" />
+        <option value="$PROJECT_DIR$/ch09_exception_handler/pom.xml" />
+        <option value="$PROJECT_DIR$/ch10_interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/ch11_interceptor_permession/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
